@@ -1,0 +1,45 @@
+* {
+    margin: unset;
+}
+
+#root {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    height: 100dvh;
+}
+
+nav {
+    display: flex;
+    gap: 1em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+}
+
+main aside {
+    display: grid;
+    grid-template-columns: 0;
+    transition: grid-template-columns 0.5s ease-in-out;
+    overflow-x: clip;
+    max-height: calc(100dvh - 100px);
+    overflow-y: auto;
+}
+
+main aside > * {
+    padding: 0.25em;
+}
+
+main aside.show {
+    grid-template-columns: auto;
+    min-width: 30ch;
+}
+
+main aside.hide * {
+    visibility: hidden;
+}
+
+aside .active {
+    font-weight: bold;
+}
