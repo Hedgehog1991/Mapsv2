@@ -36,7 +36,8 @@ export function Application() {
     // new TileLayer({ source: new OSM() }),
     new TileLayer({
       source: new StadiaMaps({
-        layer: "alidade_smooth_dark",
+          //Add API KEY AFTER REGISTER AT STADIAMAPS
+        layer: "alidade_smooth_dark", apiKey:"69dfeec6-dedf-4d6d-8344-154bbd2724d9",
         retina: true,
       }),
     }),
