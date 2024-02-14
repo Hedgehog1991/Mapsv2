@@ -1,45 +1,244 @@
-* {
-    margin: unset;
+html{
+    position: relative;
+    height: 100%;
+
+    overflow: hidden;
+    font-family: "AnonymicePro Nerd Font Propo";
+    background-color: darkred;
+}
+#root{
+    position: absolute;
+    height: 100.1%;
+    width: 100.8%;
+    left: -0.5%;
+    top: -0.1%;
+
+
+    overflow: hidden;
+    background-color: #080808;
 }
 
-#root {
-    display: grid;
-    grid-template-rows: auto auto 1fr;
-    height: 100dvh;
+.mylocation{
+    position: relative;
+    left: 1%;
+    top: 2%;
+  font-size: larger;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #678062;
+    z-index: 1;
+    text-decoration: none;
+    color: #00ff15;
+
 }
 
-nav {
-    display: flex;
-    gap: 1em;
+.zoomOut{
+    position: relative;
+    left:2%;
+    top: 2%;
+    font-size: larger;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #678062;
+    z-index: 1;
+    text-decoration: none;
+    color: #00ff15;
+}
+label.input{
+    color: blue;
+    background-color: blue;
+}
+nav{
+    gap: 5em;
+    color: blue;
+    border-width: 2px;
+    border-color: #667f61;
+    border-style: solid;
+    position: absolute;
+    left: 89%;
+    height: 10%;
+    width: 9%;
+    z-index: 1;
+    background-color: #242424;
+
+}
+
+label{
+    color: #22ff00;
+    text-align: center;
+    border-width: 2px;
+    border-color: #00ff15;<
+    border-style: solid;
+
+
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr auto auto auto auto;
+    position: absolute;
+    height: 100%;
+    width: 98.98%;
+    margin: 1%;
+    border-radius: 2%;
+    left: -0.5%;
+    top: -2%;
+
+
+
+}
+.kommune-overlay{
+    position: absolute;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    background-color: #242424;
+    font-size: large;
+    color: #2dc316;
+
+
+
 }
 
+.ol-viewport{
+    border-style: solid;
+    border-color: saddlebrown;
+    border-width: 2px;
+    border-radius: 1%;
+}
+
+
+.ol-layer {
+   /* filter:  sepia(30%) brightness(60%) contrast(200%);*/
+    filter: contrast(130%) brightness(130%) saturate(300%) ;
+    border-radius: 2%;
+
+}
+.searchStation{
+    position: absolute;
+    left: 1%;
+    width: 12.5%;
+    top: 5%;
+    overflow: hidden;
+    z-index: 2;
+}
+.ol-zoom-in{
+    color: blue;
+}
+button.ol-zoom-in, button.ol-zoom-out{
+    background-color: rgba(137, 68, 19, 0.10);
+}
+div.ol-zoom.ol-unselectable.ol-control{
+    position: absolute;
+    top: 92%;
+}
+
+/*
 main aside {
     display: grid;
-    grid-template-columns: 0;
+    grid-template-columns: 1vb;
     transition: grid-template-columns 0.5s ease-in-out;
-    overflow-x: clip;
-    max-height: calc(100dvh - 100px);
+    overflow-x: auto;
+    max-height: calc(100dvh - 50px);
     overflow-y: auto;
+
 }
 
+
 main aside > * {
-    padding: 0.25em;
+    padding: 0.60em;
+    color: beige;
+    background-color: rosybrown;
 }
 
 main aside.show {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
     min-width: 30ch;
+    z-index: 2;
 }
 
 main aside.hide * {
     visibility: hidden;
 }
-
 aside .active {
     font-weight: bold;
 }
+
+*/
+.search-container {
+flex-direction: column;
+    color: #00ff15;
+
+
+}
+button{
+    color: #00ff15;
+    background-color: #080808;
+    font-family: "AnonymicePro Nerd Font Propo";
+}
+.searchinput{
+    background-color: #242424;
+    color: #00ff15;
+
+}
+.dropdown {
+background-color: black;
+display: flex;
+flex-direction: column;
+border: 1px solid grey;
+
+}
+
+.dropdown:empty {
+border: none;
+}
+
+.dropdown-row {
+cursor:pointer;
+text-align: start;
+margin: 2px 0;
+    color: #00ff15;
+}
+
+
+.search-inner {
+display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
